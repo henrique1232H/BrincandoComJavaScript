@@ -19,6 +19,7 @@ function number(firstNumber, SecondNumber, ThirdNumber, FourNumber) {
 
     const divMostrar = document.body.querySelector(".mostrar")
 
+    divMostrar.innerHTML = "";
     divMostrar.innerHTML += `</br> Seus números escolhidos são ${firstNumber}, ${SecondNumber}, ${ThirdNumber} e ${FourNumber}`
 
     divMostrar.innerHTML += `</br> Número maximo ${maxNumber}`
