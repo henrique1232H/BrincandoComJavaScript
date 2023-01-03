@@ -8,29 +8,34 @@ function createMath(firstNumber, secondNumber, seletor) {
     let sum;
 
     function math() {
-        divMostrar.innerHTML = "";
         switch (seletor) {
             case "+":
                 sum = firstNumber + secondNumber;
-                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                return divMostrar.innerHTML += `Sua conta deu: ${sum} </br>`
                 break;
             case "-":
                 sum = firstNumber - secondNumber;
-                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                return divMostrar.innerHTML += `Sua conta deu: ${sum} </br>`
                 break;
             case "*":
                 sum = firstNumber * secondNumber;
-                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                return divMostrar.innerHTML += `Sua conta deu: ${sum} </br>`
                 break;
             case "/":
                 sum = firstNumber / secondNumber;
-                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                return divMostrar.innerHTML += `Sua conta deu: ${sum}</br>`
                 break;
             default:
-                return divMostrar.innerHTML += `Isso não é um seletor. Digite um seletor da tabela`
+                return divMostrar.innerHTML += `Isso não é um seletor. Digite um seletor da tabela </br>`
 
         }
     }
     
     math()
+}
+
+
+function resetar() {
+    const divMostrar = document.body.querySelector("#mostrar");
+    divMostrar.innerHTML = "";
 }
