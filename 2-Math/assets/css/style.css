@@ -37,7 +37,7 @@ h1,ul {
     outline: none;
     text-transform: uppercase;
     font-weight: 800;
-    transition: 0.1s ease-in;
+    transition: 0.2s all ease-in-out;
     cursor: pointer;
 }
 
