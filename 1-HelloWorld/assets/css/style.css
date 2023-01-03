@@ -64,9 +64,10 @@ button {
     text-transform: capitalize;
 }
 
-img {
-    display: block;
-    margin: 2rem auto;
-    border-radius: 0.6rem;
-    height: 40vh;
+.tabela {
+    margin: 5rem 0;
+}
+
+.tabela ul {
+    margin-left: 5rem;
 }

@@ -1,31 +1,36 @@
 // Criador de contas
 
-function createMath(num1, num2) {
-    let div = document.querySelector(".mostrar");
-    const question = window.confirm("Você quer fazer contas?");
+function createMath(firstNumber, secondNumber, seletor) {
+    const divMostrar = document.body.querySelector("#mostrar");
+    firstNumber = Number(prompt("Primeiro Número"));
+    secondNumber = Number(prompt("Segundo número"));
+    seletor = prompt("Escolha sua conta");
+    let sum;
 
-    if (question === true) {
-        const math = () => {
-            num1 = window.prompt("Primeiro número")
-            num1 = Number(num1);
+    function math() {
+        divMostrar.innerHTML = "";
+        switch (seletor) {
+            case "+":
+                sum = firstNumber + secondNumber;
+                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                break;
+            case "-":
+                sum = firstNumber - secondNumber;
+                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                break;
+            case "*":
+                sum = firstNumber * secondNumber;
+                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                break;
+            case "/":
+                sum = firstNumber / secondNumber;
+                return divMostrar.innerHTML += `Sua conta deu: ${sum}`
+                break;
+            default:
+                return divMostrar.innerHTML += `Isso não é um seletor. Digite um seletor da tabela`
 
-            num2 = window.prompt("Segundo Número");
-            num2 = Number(num2);
-
-            const sum = num1 + num2;
-            return div.innerHTML += `Sua conta deu ${sum} </br>`
-
-            
         }
-        math()
-    }else {
-        div.innerHTML += `Sem graça </br>`
     }
-}
-
-
-function reset() {
     
-    alert("Foi resetado")
+    math()
 }
-
