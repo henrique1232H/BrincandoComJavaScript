@@ -6,6 +6,15 @@ function enviar() {
     show.innerHTML += `<li>${input.toUpperCase()}</li>`;
     document.body.style.background = "#ccc";
 
+    const hello = () => {
+        const pegar = input;
+        const array = [];
+        array.push(pegar)
+        console.log(array);
+    }
+
+    hello()
+
      return input;
 
 }
