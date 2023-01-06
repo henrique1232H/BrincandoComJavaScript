@@ -13,7 +13,7 @@ function enviar() {
 
 const teste = () => {
     const pegar = enviar();
-    const array = [pegar, pegar];
+    const array = [pegar];
     document.body.style.background = "purple";
     console.log(array);
     return true;
