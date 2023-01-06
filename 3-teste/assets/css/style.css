@@ -33,4 +33,17 @@ input {
     padding: 1.2rem;
     border: 1px solid #000;
     border-radius: 0.5rem;
+    outline: none;
+}
+
+#enviar:active {
+    border: 0.1rem solid green;
+}
+
+#resetar:active {
+    border: 0.1rem solid red;
+}
+
+input:focus {
+    border: 0.1rem solid purple;
 }
