@@ -15,7 +15,7 @@ const teste = (name, age) => {
 
     
     formulario.funcao();
-    return bestGames
+    return bestGames;
 
 
 }
