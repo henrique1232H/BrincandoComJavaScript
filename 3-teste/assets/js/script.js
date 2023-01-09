@@ -15,8 +15,6 @@ function enviar() {
         
         show.innerHTML += `<li>${input.toUpperCase()}</li>`;
         document.body.style.fontSize = "15px";
-        document.body.style.background = "#ccc";
-
     })
 }
 
@@ -33,13 +31,13 @@ const reset = () => {
         
         for (let i = 0; i <= compras.length; i++){
             compras.pop();
+            compras.shift();
             compras.pop();
-            compras.pop();
-            
+            compras.shift();       
 
         }
         console.log("Resetado");
-        console.log(compras)
+        console.log(compras);
     })
     }
 
