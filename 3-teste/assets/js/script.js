@@ -24,16 +24,23 @@ enviar();
 
 const reset = () => {
     const formResetar = document.querySelector(".form #resetar")
-    console.log("teste")
     const show = document.body.querySelector(".mostrar");
 
     formResetar.addEventListener("click", (evento) => {
         evento.preventDefault();
         document.body.style.background = "#fff";
         show.innerHTML = "";
-        compras.pop();
+        
+        for (let i = 0; i <= compras.length; i++){
+            compras.pop();
+            compras.pop();
+            compras.pop();
+            
+
+        }
         console.log("Resetado");
+        console.log(compras)
     })
     }
 
-reset()
+reset();
