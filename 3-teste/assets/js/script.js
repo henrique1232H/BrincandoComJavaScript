@@ -24,7 +24,6 @@ enviar();
 
 const reset = () => {
     const formResetar = document.querySelector(".form #resetar")
-    const show = document.body.querySelector(".mostrar");
 
     formResetar.addEventListener("click", (evento) => {
         evento.preventDefault();
