@@ -15,7 +15,9 @@ function enviar() {
         
         show.innerHTML += `<li>${input.toUpperCase()}</li>`;
         document.body.style.fontSize = "15px";
+        
     })
+    return true;
 }
 
 enviar();
@@ -39,6 +41,8 @@ const reset = () => {
         console.log("Resetado");
         console.log(compras);
     })
+
+    return true;
     }
 
 reset();
