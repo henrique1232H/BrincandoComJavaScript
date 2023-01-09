@@ -31,7 +31,7 @@ const reset = () => {
         document.body.style.background = "#fff";
         show.innerHTML = "";
         
-        for (let i = 0; i <= compras.length; i++){
+        for (let i = 0; i < compras.length; i++){
             compras.pop();
             compras.shift();
             compras.pop();
