@@ -1,5 +1,6 @@
+const bestGames = []
 const teste = (name, age) => {
-    const bestGames = []
+    
     const formulario = {
          name: name,
          age: age,
@@ -46,5 +47,3 @@ const adicionar = () => {
    maisUm()
     
 }
-
-adicionar()
