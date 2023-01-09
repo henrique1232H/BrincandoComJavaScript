@@ -1,36 +1,39 @@
-
+const show = document.body.querySelector(".mostrar");
+const compras = [];
 function enviar() {
-    let input = document.body.querySelector("#text").value;
-    const show = document.body.querySelector(".mostrar");
-    document.body.style.fontSize = "15px";
-    show.innerHTML += `<li>${input.toUpperCase()}</li>`;
-    document.body.style.background = "#ccc";
+    const form = document.querySelector(".form");
+   
+   
 
-    const hello = () => {
-        const pegar = input;
-        const array = [];
-        array.push(pegar)
-        console.log(array);
-    }
+    form.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+        const input = document.body.querySelector("#text").value;
 
-    hello()
+        compras.push(input);
+        console.log(compras);
 
-     return input;
+        
+        show.innerHTML += `<li>${input.toUpperCase()}</li>`;
+        document.body.style.fontSize = "15px";
+        document.body.style.background = "#ccc";
 
+    })
 }
 
-
-const teste = () => {
-    const pegar = enviar();
-    const array = [pegar];
-    document.body.style.background = "purple";
-    console.log(array);
-    return true;
-}
+enviar();
 
 const reset = () => {
+    const formResetar = document.querySelector(".form #resetar")
+    console.log("teste")
     const show = document.body.querySelector(".mostrar");
-    document.body.style.background = "#fff";
-    show.innerHTML = "";
-    console.log("Resetado");
-}
+
+    formResetar.addEventListener("click", (evento) => {
+        evento.preventDefault();
+        document.body.style.background = "#fff";
+        show.innerHTML = "";
+        compras.pop();
+        console.log("Resetado");
+    })
+    }
+
+reset()
