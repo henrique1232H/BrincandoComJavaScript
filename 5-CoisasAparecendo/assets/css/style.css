@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
     
 }
 
@@ -13,7 +14,14 @@ html {
     display: none;
 }
 
-
+.img {
+    background-image: url("https://source.unsplash.com/random/1000x1000");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
 
 .menu {
    display: none;
@@ -67,11 +75,14 @@ aside button {
     }
 
     .aparecer {
-        background: rgba(206, 122, 122, 0.72);
-        height: 70vh;
-        width: auto;
-        display: block;
-        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        background: rgba(255, 146, 146, 0.786);
+        height: auto;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
         
     }
 
@@ -79,6 +90,7 @@ aside button {
         text-align: center;
         display: block;
         padding-top: 2rem;
+        margin-bottom: 2rem;
     }
 
 
