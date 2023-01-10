@@ -68,8 +68,8 @@ aside button {
 
     .aparecer {
         background: rgba(206, 122, 122, 0.72);
-        height: 80vh;
-        width: 100%;
+        height: 50vh;
+        width: auto;
         display: block;
         margin: 0 auto;
         
