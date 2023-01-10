@@ -8,7 +8,7 @@ function fazerAparecer() {
         if (divAparecer.style.display === "none") {
             divAparecer.style.display = "block";
         }else {
-            divAparecer.style.display = "none"
+            divAparecer.style.display = "none";
         }
         
     })

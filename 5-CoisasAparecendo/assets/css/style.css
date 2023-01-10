@@ -59,7 +59,7 @@ aside button {
 
 @media (max-width: 80rem) {
     aside button {
-        display: inline;
+        display: block;
     }
 
     aside nav {
@@ -68,7 +68,7 @@ aside button {
 
     .aparecer {
         background: rgba(206, 122, 122, 0.72);
-        height: 50vh;
+        height: 70vh;
         width: auto;
         display: block;
         margin: 0 auto;
@@ -86,5 +86,14 @@ aside button {
         padding-right: 10rem;
     }
 
+    button {
+        border: none;
+        padding: 1rem;
+        background: #fff;
+        border: 0.2rem solid #000;
+        border-radius: 2rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
 
 }
