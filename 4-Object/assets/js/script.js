@@ -1,49 +1,41 @@
-const bestGames = []
-const teste = (name, age) => {
+function enviar() {
+    const form = document.querySelector(".form");
+
+    const array = [];
     
-    const formulario = {
-         name: name,
-         age: age,
+    
+    form.addEventListener("submit", (prevent) => {
+        prevent.preventDefault();
+        
+        const inputName = form.querySelector("#name").value;
+        const inputAge = form.querySelector("#age").value;
+        const inputGame = form.querySelector("#game").value;
+        const choice = confirm("Deseja adicionar mais um jogo");
+
+        const criar = document.querySelector(".form .criar");
+        const criarInput = criar.querySelector("#another").value;
+
+         const object = {
+            name: inputName,
+            age: inputAge,
+            game: inputGame,
+            another: criarInput
+         
+        }
+
         
 
-        funcao ()  {
-            console.log(`Hello ${this.name} com ${this.age} anos!`)
-        },
-
-        bestGames: bestGames,
-    }
-
-
-    
-    formulario.funcao();
-    return bestGames;
-
-
+        if (choice === true){
+            criar.style.display = "block"
+            array.push(object)
+            
+        }else {
+            criar.style.display = "none"
+        }
+           
+        console.log(array)
+        
+    })
 }
 
-
-
-const adicionar = () => {
-    const name = prompt("Qual o seu nome?");
-    const age = prompt("Digite sua idade");
-    const bestGame = prompt("Diga seu jogo favorito");
-    
-    const confirmGame = confirm("Deseja adicionar mais um jogo?");
-    const pegarValor = teste(name, age);
-    
-    function maisUm() {
-         if (confirmGame === true){
-        const newGame = prompt("Digite mais um jogo")
-        pegarValor.push(bestGame, newGame);
-        console.log(pegarValor);
-
-    } else {
-        pegarValor.push(bestGame);
-        console.log(pegarValor);
-    }
-    
-    }
-
-   maisUm()
-    
-}
+enviar()
