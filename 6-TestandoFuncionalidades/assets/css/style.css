@@ -1,0 +1,32 @@
+.blocos .teste1 {
+    background: red;
+}
+
+.blocos {
+    gap: 10px;
+}
+
+.teste1,
+.teste2 {
+    height: 60vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blocos .teste2 {
+    background: #008000;
+    
+}
+
+.blocos {
+    display: flex;
+    flex-direction: row;
+}
+
+
+label {
+    color: #fff;
+}
